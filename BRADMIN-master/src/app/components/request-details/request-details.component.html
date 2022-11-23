@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row mt-5 " style="padding-left: 55px;">
+    <div class="col-4">
+      <button mat-flat-button (click)="back()">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+      <span style="margin-left: 15px;" class="h4 ml-4">Request detials</span>
+    </div>
+  </div>
+  <div class="card mt-5" style="width: 88%; margin: auto;">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-6">
+          <span class="h6">Id</span> <br>
+          <span class="card-text text-muted">{{request.id}}</span>
+        </div>
+        <div class="col-6">
+          <span class="h6">Created at</span> <br>
+          <span class="card-text text-muted">{{request.createdAt | date:'medium'}}</span>
+        </div>
+      </div>
+      <div class="row mt-3 mb-5">
+        <div class="col-6">
+          <span class="h6">Reason</span> <br>
+          <span class="card-text text-muted">{{request.reason}}</span>
+        </div>
+        <div class="col-6">
+          <span class="h6">Status</span> <br>
+          <span class="card-text text-muted">{{request.status}}</span>
+        </div>
+      </div>
+
+      <span class="h5">Made by</span>
+      <div class="row mt-3">
+        <div class="col-6">
+          <span class="h6">Id</span> <br>
+          <span class="card-text text-muted">{{user.id}}</span>
+        </div>
+        <div class="col-6">
+          <span class="h6">Full Name</span> <br>
+          <span class="card-text text-muted">{{user.firstname}} {{user.lastname}}</span>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-6">
+          <span class="h6">Email</span> <br>
+          <span class="card-text text-muted">{{user.email}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
